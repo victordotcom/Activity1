@@ -6,26 +6,21 @@
     <title>IP1</title>
 </head>
         <script>    
-                function displayMe(text , g1 , g2 ,g3 , g4 , g5){
+                function displayMe(){
                     var textValue1 = document.getElementById('text').value;
-                    var textValue2 = document.getElementById('g1').value;
+                    var textValue2 = document.getElementById('g1').value; 
                     var textValue3 = document.getElementById('g2').value;
                     var textValue4 = document.getElementById('g3').value;
                     var textValue5 = document.getElementById('g4').value;
                     var textValue6 = document.getElementById('g5').value;
                     
-                    var total = textValue2 + textValue3 + textValue4 + textValue5 + textValue6;
+                    var total = Number(textValue2) + Number(textValue3) + Number(textValue4) + Number(textValue5) + Number(textValue6)
                     var totalAverage = total / 5;
 
-                    alert("Name: " + textValue1 + "\n" + "IP1: " + textValue2 + "\n" + "IMI: " + textValue3 + "\n" + "OOP: " + textValue4 + "\n" + "EDP: " + textValue5 + "\n"+ "HCI2: " + textValue6 + "\n" + "Average: " + totalAverage)
+                    alert("Name: " + textValue1 + "\n" + "IP1: " + textValue2 + "\n" + "IMI: " + textValue3 + "\n" + "OOP: " + textValue4 + "\n" + "EDP: " + textValue5 + "\n"+ "HCI2: " + textValue6 + "\n" + "Average: " + totalAverage )
                 }
-                    
-                
-
         </script>
-<body>      
-                
-                
+<body>                    
                 <h2>Name:<input type="string" id="text"></h4>
                 <h1>Grade:</h1>
                 <h4>IP1:<input type="number" id="g1"></h4>
@@ -34,7 +29,7 @@
                 <h4>EDP:<input type="number" id="g4"></h4>
                 <h4>HCI2:<input type="number" id="g5"></h4>
 
-                <button onclick="displayMe(text , g1 , g2 ,g3 , g4 , g5)">Compute Baby! </button>
+                <button onclick="displayMe()">Compute Grade </button>
                 
 
 
